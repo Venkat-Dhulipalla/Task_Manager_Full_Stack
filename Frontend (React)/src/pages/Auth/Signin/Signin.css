@@ -1,0 +1,15 @@
+
+.textStyle {
+  color: white; /* Set the text color to white */
+  font-size: 2rem; /* Adjust font size for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+}
+
+.customHeading {
+  margin: 20px 0; /* Add vertical margin */
+  letter-spacing: 1px; /* Add spacing between letters */
+  text-transform: uppercase; /* Transform text to uppercase */
+  background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 100%);
+  padding: 10px;
+  border-radius: 8px; /* Add a border radius for rounded edges */
+}
