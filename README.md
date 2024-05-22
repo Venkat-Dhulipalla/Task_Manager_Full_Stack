@@ -11,6 +11,7 @@ Welcome to the Task Management System project! This is a full-stack application 
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Flow Diagram](#flow-diagram) 
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -67,7 +68,7 @@ The application is designed with a microservices architecture, separating differ
 
 ### Prerequisites
 
-- **Java 19 or higher**
+- **Java 8 or higher**
 - **Node.js and npm**
 - **MySQL**
 
@@ -75,7 +76,7 @@ The application is designed with a microservices architecture, separating differ
 
 1. **Clone the repository**:
     ```bash
-    git clone [https://github.com/your-repo/task-management-system.git](https://github.com/Venkat-Dhulipalla/Task_Manager_Full_Stack)
+    git clone https://github.com/your-repo/task-management-system.git
     cd task-management-system
     ```
 
@@ -158,6 +159,33 @@ The application is designed with a microservices architecture, separating differ
 - `src/App.js`: Main application file.
 - `src/index.js`: Entry point for React.
 
+
+## Flow Diagram
+
+![Flow Diagram](https://github.com/Venkat-Dhulipalla/Task_Manager_Full_Stack/blob/6174f5bad1a591a935c2bf7852e90f4f9645d5ce/Task%20Management%20(spring%20boot)/ScreenshotFlow.jpg)
+
+### Explanation:
+
+1. **User Interaction**:
+    - Users interact with the frontend to register, log in, and perform various tasks.
+
+2. **API Gateway**:
+    - The API Gateway routes incoming requests to the appropriate microservice based on the type of request.
+
+3. **User Service**:
+    - Manages user registration, authentication, and other user-related functionalities.
+    - Communicates with the User Database for storing and retrieving user information.
+
+4. **Task Service**:
+    - Handles task creation, assignment, and management.
+    - Communicates with the Task Database for storing and retrieving task information.
+
+5. **Submission Service**:
+    - Manages task submissions, including uploading and tracking the status of submissions.
+    - Communicates with the Submission Database for storing and retrieving submission information.
+
+6. **Eureka Server**:
+    - Manages service discovery, allowing each microservice to register and discover other services for communication.
 ## Contributing
 
 Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) for more information.
